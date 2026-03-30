@@ -1,6 +1,7 @@
 import Navbar from './component/Navbar/Navbar'
 import Banner from './component/Banner/Banner'
 import './App.css'
+import RatingSection from './ui/RatingSection'
 
 function App() {
 
@@ -11,6 +12,11 @@ function App() {
   <Navbar></Navbar>
   <Banner></Banner>
 </header>
+
+<main className='space-y-10'>
+<RatingSection/>
+
+</main>
     </>
   )
 }
