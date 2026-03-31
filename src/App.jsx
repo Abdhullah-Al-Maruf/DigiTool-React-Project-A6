@@ -3,6 +3,7 @@ import Banner from './component/Banner/Banner'
 import './App.css'
 import RatingSection from './ui/RatingSection'
 import Footer from './component/Footer/Footer'
+import ReadyToTransform from './component/ReadyToTransform/ReadyToTransform'
 function App() {
 
 
@@ -15,7 +16,8 @@ function App() {
 
 <main className='space-y-10'>
 <RatingSection/>
-<Footer></Footer>
+<ReadyToTransform/>
+<Footer/>
 </main>
     </>
   )
