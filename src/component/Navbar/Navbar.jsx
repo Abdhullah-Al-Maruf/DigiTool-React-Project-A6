@@ -38,7 +38,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-5">
-                    <span><ShoppingCart /></span>
+                    <span className='hidden md:block' ><ShoppingCart /></span>
                     <a href="/login">Login</a>
                     <Button text="Get Started" />
                 </div>

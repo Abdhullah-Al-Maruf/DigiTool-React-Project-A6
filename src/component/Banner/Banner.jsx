@@ -10,7 +10,7 @@ const Banner = () => {
                 <div className="hero-content   flex-col lg:flex-row-reverse">
                     <img
                         src={banner}
-                        className="   md:ml-20  max-w-sm rounded-lg shadow-2xl"
+                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto rounded-lg shadow-2xl md:ml-20"
                     />
                     <div>
                         <div className='flex  items-center gap-2 rounded-full bg-[#e1e7ffFF] p-1 w-70 px-2'> <img src={circle} alt="" />
@@ -31,13 +31,13 @@ const Banner = () => {
                             Explore Products
 
                         </p>
-                    <Button text="Explore Products" />
-                 <button className=' btn btn-primary rounded-full  bg-linear-to-b
+                        <Button text="Explore Products" />
+                        <button className=' btn btn-primary rounded-full  bg-linear-to-b
                              from-[#4f39f6]
                               to-[#9514fa] 
                               bg-clip-text
                             text-transparent 
-                            ml-4 '> <Play color='#4f39f6'/> Watch Demo </button>
+                            ml-4 '> <Play color='#4f39f6' /> Watch Demo </button>
 
                     </div>
                 </div>
