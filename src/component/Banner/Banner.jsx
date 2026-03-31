@@ -1,6 +1,6 @@
 import React from 'react';
 import banner from "../../assets/images/banner.png"
-import circle from "../../../public/group-5.png"
+import circle from "/group-5.png"
 import Button from '../../ui/Button';
 import { Play } from 'lucide-react';
 const Banner = () => {

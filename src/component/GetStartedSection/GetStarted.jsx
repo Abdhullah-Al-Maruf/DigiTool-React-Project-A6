@@ -1,0 +1,49 @@
+import React from 'react';
+
+const GetStarted = () => {
+    return (
+        <div className='space-y-7 mb-28 '>
+            <div className='text-center'>
+                <h1 className='text-3xl '>Get Started in 3 Steps</h1>
+                <p className='text-neutral-400'>Start using premium digital tools in minutes, not hours.</p>
+            </div>
+            <div className='grid  w-[80%] mx-auto grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5'>
+                {/* card */}
+                <div className='flex
+                 flex-col justify-center items-center rounded-xl shadow-sm py-5 px-15'>
+                    <img className=' p-3 bg-linear-to-b from-[#4f39f6]/10 to-[#9514fa]/10 rounded-full' src="/user.png" alt="user" />
+                    <h3 className='font-semibold text-xl'>Create Account</h3>
+                    <p className='text-center text-neutral-400'>Sign up for free in seconds. No credit card required to get started.</p>
+                    <div>
+                    </div>
+                </div>
+                <div className=' flex
+                 flex-col justify-center items-center rounded-xl shadow-sm py-5 px-15'>
+                    <img className='p-3 bg-linear-to-b from-[#4f39f6]/10
+                     to-[#9514fa]/10 rounded-full'
+                      src="/package.png" alt="package" />
+                    <h3 className='font-semibold text-xl'>Choose Products</h3>
+                    <p className='text-center text-neutral-400'>Browse our catalog and select the tools
+that fit your needs.</p>
+                    <div>
+                    </div>
+                </div>
+                <div className=' flex
+                 flex-col justify-center items-center rounded-xl shadow-sm py-5 px-15'>
+                    <img className='p-3 bg-linear-to-b from-[#4f39f6]/10
+                     to-[#9514fa]/10 rounded-full' 
+                     src="/rocket.png" alt="rocket" />
+                    <h3 className='font-semibold text-xl'>Start Creating</h3>
+                    <p className='text-center text-neutral-400'> Download and start using your premium 
+tools immediately.</p>
+                    <div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    );
+};
+
+export default GetStarted;
