@@ -4,6 +4,12 @@ import Button from './Button';
 
 const SubscriptionCard = ({ product,additem,setAdditem }) => {
  const handleClickEvent=(product)=>{
+   const ifExist= additem.find(item=> item.title === product.title)
+   if (ifExist) {
+    alert("item already in")
+    return
+    
+   } 
 setAdditem([...additem ,product])
 
  }
@@ -19,7 +25,7 @@ setAdditem([...additem ,product])
                         {product.badge}</span>
 
                     <div className='bg-white shadow-md w-10  rounded-full'>
-                        <img className=' p-2' src={product.image} alt={product.name} /></div>
+                        <img className=' p-2' src={product.image} alt={product.title} /></div>
                     <h2 className="text-3xl font-bold">{product.title}</h2>
                     <p className='text-neutral-500'>{product.description}</p>
                     <div className="text-xl">${product.price}/mo</div>
