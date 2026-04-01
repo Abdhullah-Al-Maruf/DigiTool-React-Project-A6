@@ -2,7 +2,7 @@ import React from 'react';
 
 const ReadyToTransform = () => {
     return (
-        <div className=' p-5 md:py-30  md:px-50 min-h-96 bg-linear-to-r
+        <div className=' p-5 mt-10 md:py-30  md:px-50 min-h-96 bg-linear-to-r
                          from-[#4f39f6]
                         to-[#9514fa]  space-y-8 text-center'>
         <div>
@@ -16,6 +16,7 @@ Start your free trial today.</p>
             <button className=' text-white btn btn-outline font-semibold rounded-full '>View Pricing</button>
 
         </div>
+        <p className='text-white'>14-day free trial • No credit card required • Cancel anytime</p>
 
         </div>
     );

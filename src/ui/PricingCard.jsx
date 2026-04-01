@@ -22,7 +22,7 @@ const PricingCard = ({ price }) => {
                     <p className='text-neutral-400'>{price.tagline}</p>
                     <ul className="mt-6 flex flex-col gap-2 text-xs">
 {
-    price.features.map(feature=>  <li className='flex  items-center gap-2'> <Check color={`${price.highlighted ? "white" :"green"}`}/> {feature}</li>)
+    price.features.map((feature,index)=>  <li key={index} className='flex  items-center gap-2'> <Check color={`${price.highlighted ? "white" :"green"}`}/> {feature}</li>)
 }
 
                     </ul>

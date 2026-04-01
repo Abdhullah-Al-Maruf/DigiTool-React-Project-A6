@@ -7,6 +7,7 @@ import ReadyToTransform from './component/ReadyToTransform/ReadyToTransform'
 import GetStarted from './component/GetStartedSection/GetStarted'
 import Card from './ui/PricingCard'
 import Pricing from './component/PricingSection/Pricing'
+import AllProducts from './component/AllProductsSection/AllProduct/AllProducts'
 function App() {
 
 
@@ -17,13 +18,17 @@ function App() {
   <Banner></Banner>
 </header>
 
-<main className='space-y-10'>
+<main >
 <RatingSection/>
+<AllProducts/>
 <GetStarted/>
-<ReadyToTransform/>
 <Pricing></Pricing>
-<Footer/>
+<ReadyToTransform/>
 </main>
+
+<footer>
+<Footer/>
+</footer>
     </>
   )
 }
