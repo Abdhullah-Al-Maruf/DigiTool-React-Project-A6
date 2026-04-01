@@ -1,15 +1,26 @@
 import { Check } from 'lucide-react';
 import React from 'react';
 import Button from './Button';
-
+import { toast } from 'react-toastify';
 const SubscriptionCard = ({ product,additem,setAdditem }) => {
  const handleClickEvent=(product)=>{
    const ifExist= additem.find(item=> item.title === product.title)
    if (ifExist) {
-    alert("item already in")
+toast.error('Item already added to the cart', {
+  position: "top-center",
+  theme: "colored"
+  
+  });
     return
     
    } 
+   else{
+     toast.success('Item added Successfully to the Cart', {
+    position: "top-center",
+    theme: "colored"
+    
+    });
+   }
 setAdditem([...additem ,product])
 
  }

@@ -6,7 +6,7 @@ import Card from '../../ui/PricingCard';
 const PricingPromise =fetch("/pricingData.json").then(res=> res.json())
 
 
-const Pricing = ({additem,setAdditem}) => {
+const Pricing = () => {
     const allPricingData =use(PricingPromise)
 
     return (
