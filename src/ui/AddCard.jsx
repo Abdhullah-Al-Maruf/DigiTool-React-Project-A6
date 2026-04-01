@@ -1,7 +1,11 @@
 import React from 'react';
 
-const AddCard = ({item}) => {
-    
+const AddCard = ({item,additem ,setAdditem}) => {
+    const handleDeleteButton=(singleItem)=>{
+    const filteredItem=additem.filter(el=> el.title !== singleItem.title)
+    setAdditem(filteredItem)
+
+    }
     return (
         <div>
          
@@ -15,7 +19,9 @@ const AddCard = ({item}) => {
                     <h3 className='text-gray-600'>${item.price}</h3>
                 </div>
                 </div>
-                <button className='text-red-600 btn'> Remove</button>
+                <button
+                onClick={()=>handleDeleteButton(item)}
+                className='text-red-600 btn'> Remove</button>
            </div>
         </div>
     );

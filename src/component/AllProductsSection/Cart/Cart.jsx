@@ -9,7 +9,9 @@ const Cart = ({ additem, setAdditem }) => {
                 <h1 className='font-semibold'>Your Cart</h1>
                 <div>
                     {
-                        additem.map(item => <AddCard key={item.id} item={item} />)
+                        additem.map(item => <AddCard  key={item.id}
+                         additem={additem}   setAdditem={setAdditem}
+                            item={item} />)
 
                     }
                 </div>
