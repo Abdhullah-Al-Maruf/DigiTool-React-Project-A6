@@ -26,21 +26,29 @@ Whether you're on mobile squeezing in a quick browse or sitting at a desktop doi
 
 ---
 
-Features
-Product Browsing & Cart Management
-Users can view products in a 3-column layout.
+Features--
+1.Product Browsing & Cart Management.
+
+2.Users can view products in a 3-column layout.
 Add or remove items from the cart.
 Proceed to checkout clears all items.
-Dynamic Navbar
+
+3.Dynamic Navbar---
 Displays current cart item count.
 Cart icon updates dynamically when products are added or removed.
-Responsive Design
+
+4.Responsive Design--
 Fully responsive across mobile, tablet, and desktop.
 Clean, modern UI inspired by Figma designs.
+
+-------------------------------------
 Optional Features Implemented
-Clicking on a product increases the cart count in the Navbar.
-Clicking "Buy Now" shows an "Added to cart" notification using React-Toastify.
-Cart alerts for add, remove, and proceed to checkout actions.
+---------------------------------
+*Clicking on a product increases the cart count in the Navbar.
+
+* Clicking "Buy Now" shows an "Added to cart" notification using React-Toastify.
+
+*Cart alerts for add, remove, and proceed to checkout actions.
 
 
 Live Demo:
