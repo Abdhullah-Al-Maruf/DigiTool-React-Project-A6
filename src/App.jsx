@@ -5,6 +5,8 @@ import RatingSection from './component/RatingSection/RatingSection'
 import Footer from './component/Footer/Footer'
 import ReadyToTransform from './component/ReadyToTransform/ReadyToTransform'
 import GetStarted from './component/GetStartedSection/GetStarted'
+import Card from './ui/PricingCard'
+import Pricing from './component/PricingSection/Pricing'
 function App() {
 
 
@@ -15,10 +17,11 @@ function App() {
   <Banner></Banner>
 </header>
 
-<main className=''>
+<main className='space-y-10'>
 <RatingSection/>
 <GetStarted/>
 <ReadyToTransform/>
+<Pricing></Pricing>
 <Footer/>
 </main>
     </>
