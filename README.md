@@ -1,16 +1,49 @@
-# React + Vite
+# 🛠️ DigiTools
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern subscription-based product platform where browsing, buying, and managing your cart actually feels good.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What is DigiTools?
 
-## React Compiler
+DigiTools started as a simple idea — what if shopping for digital tools felt as smooth as using them?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Built with React.js, DigiTools is a fully responsive web app where users can explore products, dig into the details, and manage their cart without friction. Every section — from the product grid to pricing — was crafted to match clean Figma layouts while keeping the experience intuitive and fast.
 
-## Expanding the ESLint configuration
+Whether you're on mobile squeezing in a quick browse or sitting at a desktop doing serious research, DigiTools adapts to you.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚡ Tech Stack
+
+| Tool | What it does here |
+|---|---|
+| **React.js** | Drives the entire frontend UI |
+| **Tailwind CSS + DaisyUI** | Keeps styling consistent and component-ready |
+| **JavaScript (ES6+)** | Handles all logic and interactivity |
+| **React-Toastify** | Delivers slick cart notifications |
+| **JSON** | Manages and serves all product data |
+
+---
+
+Features
+Product Browsing & Cart Management
+Users can view products in a 3-column layout.
+Add or remove items from the cart.
+Proceed to checkout clears all items.
+Dynamic Navbar
+Displays current cart item count.
+Cart icon updates dynamically when products are added or removed.
+Responsive Design
+Fully responsive across mobile, tablet, and desktop.
+Clean, modern UI inspired by Figma designs.
+Optional Features Implemented
+Clicking on a product increases the cart count in the Navbar.
+Clicking "Buy Now" shows an "Added to cart" notification using React-Toastify.
+Cart alerts for add, remove, and proceed to checkout actions.
+
+
+Live Demo:
+Live Site Link:  https://digitools-inventory.netlify.app/
+
+
