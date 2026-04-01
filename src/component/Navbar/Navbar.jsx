@@ -1,7 +1,7 @@
 import { ShoppingCart } from 'lucide-react';
 import Button from '../../ui/Button';
 import React from 'react';
-const Navbar = () => {
+const Navbar = ({additem}) => {
     return (
         <div>
             <div className="navbar bg-base-100 shadow-sm">
@@ -38,7 +38,12 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-5">
-                    <span className='hidden md:block' ><ShoppingCart /></span>
+                    <div className='relative'>
+<span className=' hidden md:block ' ><ShoppingCart /> </span>
+<span className='hidden  md:block absolute  -top-4  -right-3   font-bold text-xl '>
+    {additem.length}</span>
+                    </div>
+                    
                     <a href="/login">Login</a>
                     <Button text="Get Started" />
                 </div>

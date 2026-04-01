@@ -8,21 +8,25 @@ import GetStarted from './component/GetStartedSection/GetStarted'
 import Card from './ui/PricingCard'
 import Pricing from './component/PricingSection/Pricing'
 import AllProducts from './component/AllProductsSection/AllProduct/AllProducts'
+import { useState } from 'react'
 function App() {
 
+//  state for  cart 
+const [additem, setAdditem ]=useState([])
 
   return (
+    
     <>
 <header className='space-y-14'>
-  <Navbar></Navbar>
+  <Navbar additem={additem}></Navbar>
   <Banner></Banner>
 </header>
 
 <main >
 <RatingSection/>
-<AllProducts/>
+<AllProducts additem={additem} setAdditem={setAdditem}/>
 <GetStarted/>
-<Pricing></Pricing>
+<Pricing ></Pricing>
 <ReadyToTransform/>
 </main>
 

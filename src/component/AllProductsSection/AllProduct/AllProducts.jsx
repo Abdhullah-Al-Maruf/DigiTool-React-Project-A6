@@ -7,13 +7,13 @@ import Cart from '../Cart/Cart';
 const  subscriptionDataPromise =fetch("/subscriptonData.json").then(res=>res.json())
 
 
-const AllProducts = () => {
+const  AllProducts = ({additem,setAdditem}) => {
     // state for btn toggle
     const [tab, setTab] = useState("Product")
 
 
     return (
-        <div className='w-[90%] mx-auto mb-10'>
+        <div className='w-[90%] mx-auto mb-35'>
             {/* text content */}
             <div className='text-center'>
                 <h1 className='font-bold text-3xl'>Premium Digital Tools</h1>
@@ -21,7 +21,7 @@ const AllProducts = () => {
                     to boost your productivity and creativity.</p>
             </div>
             <div className='flex justify-center mt-5' >
-                <div className='flex justify-center gap-2 px-5 py-1 bg-gray-100 rounded-full w-[180px]'>
+                <div className='flex justify-center gap-2 px-5 py-1 bg-gray-100/50 rounded-full w-[180px]'>
 
                     <button
                         onClick={() => setTab("Product")}
@@ -33,7 +33,7 @@ const AllProducts = () => {
                         className={
                             `  ${tab === "Cart" ? " text-white shadow-xl btn rounded-full bg-linear-to-b from-[#4f39f6] to-[#9514fa] " : ""} `
                         }
-                    > Cart(2) </button>
+                    > Cart({additem.length}) </button>
                 </div>
 
             </div>
@@ -41,8 +41,8 @@ const AllProducts = () => {
 
             <div>
           { tab ==="Product" ? 
-            <Products subscriptionDataPromise={subscriptionDataPromise} /> 
-             : <Cart/>  }
+            <Products additem={additem} setAdditem={setAdditem} subscriptionDataPromise={subscriptionDataPromise} /> 
+             : <Cart additem={additem} setAdditem={setAdditem} />  }
                         
             </div>
 
